@@ -28,7 +28,7 @@ onload = function () {
 
 function init() {
   // 自キャラ初期化
-  player = new Player(100, 400, 16, "/jump_game/img/reimu.png", 0, 0);
+  player = new Player(100, 400, 16, "/games/jump_game/img/reimu.png", 0, 0);
 
   // 敵キャラ初期化
   enemy = [];
@@ -39,14 +39,14 @@ function init() {
   moon.posx = 100;
   moon.posy = 100;
   moon.image = new Image();
-  moon.image.src = "/jump_game/img/moon.png";
+  moon.image.src = "/games/jump_game/img/moon.png";
 
   // 城
   castle = new Sprite();
   castle.posx = 400;
   castle.posy = 296;
   castle.image = new Image();
-  castle.image.src = "/jump_game/img/castle.png";
+  castle.image.src = "/games/jump_game/img/castle.png";
 
   // パーティクル初期化
   particles = [];
@@ -199,7 +199,7 @@ function generateNextEnemy() {
     600, 
     400 - (Math.random() < 0.5 ? 0 : 50),
     12,
-    "/jump_game/img/marisa.png",
+    "/games/jump_game/img/marisa.png",
     4 + 5 * Math.random(),
     0
   );
